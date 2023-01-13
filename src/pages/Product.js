@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { AiFillStar } from 'react-icons/ai'
-import Currency from 'react-currency-formatter'
+// import Currency from 'react-currency-formatter'
 
 const Product = ({id, title, price, description, category, image, hasPrime}) => {
 const [rating] = useState(Math.floor(Math.random()* (3 + 1) + 2))
@@ -19,7 +19,7 @@ const [rating] = useState(Math.floor(Math.random()* (3 + 1) + 2))
             </div>
             <p className='text-sm my-2 line-clamp-2'>{description}</p>
             <div className='font-semibold py-2'>
-                <Currency quantity={price} currency='GBP' />
+                {/* <Currency quantity={price} currency='GBP' /> */}
             </div>
             {hasPrime && (
                 <div className='flex items-center'>
